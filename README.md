@@ -20,16 +20,17 @@ Including also relativity corrections, the equation of the pressure takes the fo
 
 $$ \frac{dP(r)}{dr} = \frac{G M(r) \rho(r)}{r^2} \left[ 1 + \frac{P(r)}{\rho(r) c^2} \right] \left[ 1 + \frac{4 \pi r^3 P(r)}{M(r) c^2} \right] \left[ 1 - \frac{2 G M(r)}{c^2 r} \right]^{-1}
 $$
+
 where $c^2$ is the speed of light.
 
 For r=0 the mass is 0 and the maximum value of r and since the pressure of a neutron star vanishes at the surface, the maximum value of r and M is reached when P = 0.
 
 The equation of state used to express the relation between P and $\rho$ is the one suggested by [1](#references):
 
-$$ \bar{\rho} = 0.871 \bar{P^3/5} + 2.667 \bar{P}
+$$ \bar{\rho} = 0.871 \bar{P}^{3/5} + 2.667 \bar{P}
 $$
 
-where $\rho = \bar{\rho} \frac{M_s}{R_s^3} $ and $P = \bar{P} \frac{M_s}{R_s^3 c^2}$ with $M_s$ and $R_s$ are the mass and the radius of the sun. This equation has been empirically obtained, starting from the Fermi gas model, to take into account both non-relativistic and relativistic effects. 
+where $\rho = \bar{\rho} \frac{M_s}{R_s^3}$ and $P = \bar{P} \frac{M_s}{R_s^3} c^2$ with $M_s$ and $R_s$ are the mass and the radius of the sun. This equation has been empirically obtained, starting from the Fermi gas model, to take into account both non-relativistic and relativistic effects. 
 
 ## Project File Description
 constants.py eos.py tov_solver.py utils.py 
@@ -61,13 +62,13 @@ You can run the code using the `Makefile`.
    
 -To measure the execution time:
 
-```bash
+   ```bash
    make time_test
    ```
 
 -To get a list of all run options:
 
-```bash
+   ```bash
    make help
    ```
 

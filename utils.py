@@ -1,3 +1,6 @@
+# utils.py
+# This module contains utility functions for operations across the project.
+
 import numpy as np
 
 def rescaled_exponents(start, end, n, power=2.0):

@@ -1,3 +1,6 @@
+# plotting.py
+# This module contains the functions to produce all relevant plots for the program.
+
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import numpy as np

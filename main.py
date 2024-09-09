@@ -1,3 +1,6 @@
+# main.py
+# This module contains the main function for the execution of the program.
+
 import numpy as np
 from constants import num_p, phys_c
 import utils

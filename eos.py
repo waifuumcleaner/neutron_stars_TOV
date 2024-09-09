@@ -1,3 +1,8 @@
+# eos.py
+# Contains the equation of state (EoS) employed in the project.
+# Polytrope obtained from fit of a pure neutron star Fermi gas model,
+# with both relativistic and non-relativistic behaviour.
+
 import numpy as np
 
 def eos_rho(P):

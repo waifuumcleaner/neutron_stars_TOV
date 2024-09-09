@@ -1,3 +1,7 @@
+# tov_solver.py
+# This module contains the equations to be solved and the
+# implementation of a custom fourth-order Runge-Kutta method.
+
 import numpy as np
 import eos
 from constants import phys_c

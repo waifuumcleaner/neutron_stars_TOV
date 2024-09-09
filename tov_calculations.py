@@ -1,3 +1,6 @@
+# tov_calculations.py
+# This module contains the function that manages the computation of the TOV solutions.
+
 import numpy as np
 from constants import num_p
 import tov_solver

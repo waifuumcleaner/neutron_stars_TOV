@@ -1,3 +1,6 @@
+# time_performance.py
+# This module contains the functions to test the time performance of a given method.
+ 
 import timeit
 import gc
 

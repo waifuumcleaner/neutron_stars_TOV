@@ -23,7 +23,7 @@ def main():
     if args.time_test:
         P_c = 0.001  # Example central pressure for timing test
         Rho_c = eos.eos_rho(P_c)
-        average_ex_time = time_test(compute_solutions, P_c, Rho_c, use_scipy=args.use_scipy)
+        average_ex_time = time_test(compute_solutions, P_c, Rho_c, args.use_scipy)
         print(f"Execution time: {average_ex_time:.2f} ms")
     else:
         # Generate central pressures and corresponding densities

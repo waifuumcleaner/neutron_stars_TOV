@@ -14,6 +14,12 @@ run: $(MAIN_FILE) $(DEPS) $(OUTPUT_DIR)
 time_test: $(MAIN_FILE) $(DEPS) $(POP_DIR) $(OUTPUT_DIR)
 	$(PYTHON) $(MAIN_FILE) --time_test $(ARGS)
 
+use_scipy: $(MAIN_FILE) $(DEPS) $(OUTPUT_DIR)
+	$(PYTHON) $(MAIN_FILE) --use_scipy $(ARGS)
+
+time_test_scipy: $(MAIN_FILE) $(DEPS) $(POP_DIR) $(OUTPUT_DIR)
+	$(PYTHON) $(MAIN_FILE) --time_test --use_scipy $(ARGS)
+
 clean:
 	rm -rf __pycache__ $(OUTPUT_DIR)/*.png
 
@@ -22,8 +28,10 @@ $(OUTPUT_DIR):
 
 help:
 	@echo "Commands in the Makefile:"
-	@echo "  make           - Runs the main script"
-	@echo "  make run       - Runs the main script"
-	@echo "  make time_test - Measures the execution time of the program"
-	@echo "  make clean     - Removes temporary and cache files"
+	@echo "  make           		- Runs the main script"
+	@echo "  make run       		- Runs the main script"
+	@echo "  make time_test			- Measures the execution time of the program"
+	@echo "  make use_scipy 		- Runs the main script using scipy ODE solver"
+	@echo "  make time_test_scipy 	- Measures the execution time of the program when using scipy ODE solver"
+	@echo "  make clean     		- Removes temporary and cache files"
 	

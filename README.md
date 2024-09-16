@@ -27,7 +27,7 @@ For r=0 the mass is 0, while the maximum value of r and M is reached when P = 0,
 
 The EoS used to express the relation between P and $\rho$ is the one suggested in [1](#references):
 
-$$ \bar{\rho} = 0.871 \bar{P}^{3/5} + 2.667 \bar{P}
+$$ \bar{\rho} = 0.871 \bar{P}^{3/5} + 2.867 \bar{P}
 $$
 
 where $\rho = \bar{\rho} \frac{M_s}{R_s^3}$ and $P = \bar{P} \frac{M_s}{R_s^3} c^2$, with $M_s$ and $R_s$ the mass and the radius of the sun, respectively. This equation has been empirically obtained, starting from the pure neutron Fermi gas model, to take into account both non-relativistic and relativistic effects. 
